@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.cf::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1850px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  font-family: Tahoma;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.4;
+  background: #fff;
+}
+
+.site__header {
+  padding-top: 12px;
+}
+.site__logo {
+  float: left;
+  padding: 33px 30px;
+  transition: padding 300ms;
+  padding-left: 0;
+  width: 50%;
+  min-width: 100px;
+}
+@media (min-width: 578px) and (max-width: 850px) {
+  .site__logo {
+    float: none;
+    width: 100%;
+    padding: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .site__logo {
+    padding-left: 20px;
+    width: auto;
+  }
+}
+.site__logo--img {
+  max-width: 100%;
+}
+@media (min-width: 578px) and (max-width: 850px) {
+  .site__logo--img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.site__menu {
+  float: right;
+}
+@media (min-width: 1px) and (max-width: 577px) {
+  .site__menu {
+    display: none;
+  }
+}
+@media (min-width: 578px) and (max-width: 850px) {
+  .site__menu {
+    float: none;
+    text-align: center;
+  }
+}
+.site__list {
+  list-style: none;
+}
+@media (min-width: 578px) and (max-width: 850px) {
+  .site__list {
+    display: inline-block;
+  }
+}
+.site__item {
+  display: inline-block;
+}
+.site__link {
+  display: inline-block;
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 30px 33px;
+  transition: padding 300ms ease-in, text-decoration 300ms linear;
+}
+.site__link:hover {
+  text-decoration: underline;
+}
+@media (min-width: 578px) and (max-width: 850px) {
+  .site__link {
+    padding: 20px;
+  }
+}
+
+.experience {
+  width: 100%;
+  padding-top: 45px;
+  background: #f5f5f5;
+}
+@media (min-width: 768px) {
+  .experience {
+    padding-top: 90px;
+  }
+}
+.experience::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.experience__main-heading {
+  max-width: 456px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .experience__main-heading {
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 106px;
+  }
+}
+.experience__menu {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.experience__list {
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 22px;
+}
+@media (min-width: 768px) {
+  .experience__list {
+    padding-bottom: 44px;
+  }
+}
+.experience__list::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #333;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+@media (min-width: 900px) {
+  .experience__list::after {
+    box-shadow: 0 18px 0 0 #333;
+  }
+}
+.experience__item {
+  display: inline-block;
+}
+.experience__link {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 16px;
+}
+@media (min-width: 768px) {
+  .experience__link {
+    font-size: 22px;
+    padding: 22px;
+  }
+}
+.experience__link--active {
+  color: #ff0000;
+}
+.experience__image {
+  width: 100%;
+}
+@media (min-width: 900px) {
+  .experience__image {
+    width: 40%;
+    float: left;
+    margin-right: 10px;
+  }
+}
+.experience__image--img {
+  max-width: 100%;
+  vertical-align: top;
+  height: auto;
+}
+.experience__content {
+  width: 100%;
+  padding-top: 100px;
+}
+@media (min-width: 1500px) {
+  .experience__content {
+    width: 50%;
+    float: left;
+  }
+}
+.experience__heading {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+.experience__heading--sub {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .experience__heading--sub {
+    font-size: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .experience__heading {
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 48px;
+  }
+}
+.experience__info {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .experience__info {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 115px;
+  }
+}
+.experience__info--date {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .experience__info--date {
+    font-size: 30px;
+    margin-bottom: 55px;
+  }
+}
+.experience__info--sub {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 36px;
+}
+
+.site__footer {
+  padding: 40px 20px;
+  background: #fff;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=style.css.map */
